@@ -20,8 +20,8 @@ enum Directions{
     LEFT, RIGHT, DOWN, UP
 }
 public class HomeWork14 {
-    public static final int N = 5; // столбцы
-    public static final int H = 4; // строки
+    public static final int N = 10; // столбцы
+    public static final int H = 10; // строки
 
     public static void printArray(int[][] array){
         for (int i = 0; i < array.length; i++){
@@ -81,7 +81,7 @@ public class HomeWork14 {
                         j++;
                     }
                 }
-            };
+            }
             index++;
         }
         printArray(array);
