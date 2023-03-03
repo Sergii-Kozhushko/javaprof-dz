@@ -11,8 +11,8 @@ import java.util.Stack;
 
 // Задача: реализовать очередь, использовав только два стека внутри
 public class QueueFromStacks<T> {
-   private Stack<T> stack1 = new Stack();
-   private Stack<T> stack2 = new Stack();
+   private Stack<T> stack1 = new Stack<>();
+   private Stack<T> stack2 = new Stack<>();
 
    // метод помещает элемент в очередь
    public void push(T element){
@@ -44,7 +44,7 @@ public class QueueFromStacks<T> {
    }
 
    public static void main(String[] args) {
-      QueueFromStacks<String> queue = new QueueFromStacks<String>();
+      QueueFromStacks<String> queue = new QueueFromStacks<>();
       queue.pop();
       queue.push("a1");
       queue.push("a2");
