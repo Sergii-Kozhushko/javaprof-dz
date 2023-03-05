@@ -1,5 +1,7 @@
+package de.telran.java.egorov;
+
 /**
- * Island.java
+ * de.telran.java.egorov.Island.java
  *
  * @author Sergii Kozhushko, sergiikozhushko@gmail.com
  * Date of creation: 23-Feb-2023 17:54

@@ -1,3 +1,5 @@
+package de.telran.java.egorov;
+
 /**
  * HoeWrok14.java
  *
