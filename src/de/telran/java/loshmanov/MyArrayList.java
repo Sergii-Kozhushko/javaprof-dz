@@ -65,6 +65,20 @@ public class MyArrayList {
         return null;
     }
 
+    // Task 2 Второй вариант решения - двунаправленным итератором
+    public static int getListMiddleNew(List<Integer> list){
+        ListIterator<Integer> iterator1 = list.listIterator(0);
+        ListIterator<Integer> iterator2 =  list.listIterator(list.size());
+        Integer result1, result2;
+        while (iterator1.hasNext() && iterator2.hasPrevious()){
+            result1 = iterator1.next();
+            result2 = iterator2.previous();
+            if (result1 == result2 ) return result1;
+        }
+        return 0;
+    }
+
+
     // Task 1
     // Некрасивый, но рабочий код
     public static ArrayList<Integer> orderLists(List<Integer> list1, List<Integer> list2) {
@@ -110,9 +124,12 @@ public class MyArrayList {
         return result;
     }
 
+
+
     public static void main(String[] args) {
         //System.out.println(orderLists(Arrays.asList(1, 2, 3), Arrays.asList(1, 4, 30)));
         System.out.println(getListMiddle(Arrays.asList(1,2,3,4,5)));
+        System.out.println(getListMiddleNew(Arrays.asList(1,2,3,4,5)));
 
     }
 
